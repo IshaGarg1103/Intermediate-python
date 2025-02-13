@@ -1,4 +1,6 @@
 #set : no duplicates, mutable, unordered
+#set is mutable but the items inside it is immutable
+
 myset={1,2,3,1,2}
 print(myset) #{1,2,3}
 
