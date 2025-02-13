@@ -6,4 +6,4 @@ s=(1,2,3)
 print(hash(s))
 
 s={1:2,3:4}
-print(hash(s))
+#print(hash(s)) #Typeerror : unhashable type : 'dict'
