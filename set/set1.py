@@ -39,8 +39,34 @@ print(4 in myset) #False
 #UNION
 set1={1,2,3}
 set2={3,4,5}
-print(set1 | set2) 
+print(set1 | set2) #{1,2,3,4,5}
+
 set=set1.union(set2)
+print(set)   #{1,2,3,4,5}
+print(set1)  #{1,2,3}
+print(set2)  #{3,4,5}
+
+#INTERSECTION
+set1={1,2,3}
+set2={3,4,5}
+print(set1 & set2)
+
+set=set1.intersection(set2)
 print(set)
-print(set1)
-print(set2)
+print(set1)  #{1,2,3}
+print(set2)  #{3,4,5}
+
+#SYMMETRIC DIFFERENCE 
+set1={1,2,3}
+set2={3,4,5}
+print(set1^set2) #{1,2,4,5}
+
+#FROZEN SETS- is an immutable version of a set, once created its elements can't be changed
+myset=frozenset((1,2,3))
+print(myset) #frozenset({1, 2, 3})
+
+#frozen sets are immutable
+#myset.add(4) #Error: AttributeError (frozen sets are immutable)
+
+#immutable (integers, strings, tuples)
+#mutable : lists, dictionaries, sets are not hashable because they are mutable
