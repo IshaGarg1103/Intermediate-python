@@ -18,5 +18,4 @@ print(str) #hello world
 
 print(str.replace("World","universe")) #hello world 
 #it is case sensitive
-
 print(str.replace("world","universe")) #hello universe

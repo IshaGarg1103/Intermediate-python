@@ -22,7 +22,10 @@ mytuple=[8,7]
 #print(mydict) #Type Error : unhashable type : 'list' 
 #In Python, dictionary keys must be hashable and immutable, meaning they must 
 # have a fixed value that doesn’t change over time
+#hashable -objects that can be used as keys in dictionary
 
 mytuple=(8,7)
 mydict={mytuple : 15}
-print(mydict)
+print(mydict) # {(8,7):15}
+#all the previous key value pairs will dissapear
+
