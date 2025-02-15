@@ -7,15 +7,16 @@ str="""Hello \
 World"""
 print(str) #Hello World #no line break
 
+#STRIP
 str="   hello world   "
-print(str.strip()) #wouldn't change the string because it is immutable
+str.strip() #wouldn't change the string because it is immutable
 print(str) #'   hello world   '
-str=str.strip()
+print(str.strip()) #hello world
+#it printed stripped string, but the actual string is still the same 
+str=str.strip() 
 print(str) #hello world
 
 print(str.replace("World","universe")) #hello world 
 #it is case sensitive
 
 print(str.replace("world","universe")) #hello universe
-
-
