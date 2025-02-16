@@ -20,3 +20,10 @@ print(Point._fields)
 p=Point(10,20)
 p_new=p._replace(x=30)
 print(p_new) #Point(x=30, y=20)
+
+#returning multiple values from functions:
+def cool():
+    return namedtuple('UserInfo',['Name','email'])('Isha','isha@xyz.com')
+user1=cool()
+print(user1.Name)
+
