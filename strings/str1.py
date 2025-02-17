@@ -21,10 +21,10 @@ newstr=''
 for i in mylist:
     newstr+=i
 stop=timer()
-print(stop-start)
+print(stop-start) #0.26
 
 #GOOD METHOD :
 start=timer()
 newstr=''.join(mylist)
 stop=timer()
-print(stop-start)
+print(stop-start) #0.011

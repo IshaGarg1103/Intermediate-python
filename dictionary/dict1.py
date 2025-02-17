@@ -24,5 +24,6 @@ for value in mydict:
     print(value,end=' ') #will give keys in the output
     #ouput:name age city email
 
+#for acquiring both at the same time
 for key,value in mydict.items():
     print(key,value)
