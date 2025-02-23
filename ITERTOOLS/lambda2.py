@@ -13,4 +13,5 @@ print(sort_by_y(points2d))
 
 points2d_sorted = sorted(points2d, key = lambda x: x[0]+x[1])
 print(points2d)
-print(points2d_sorted) # it will sort according to the y value
+print(points2d_sorted) # it will sort according to sums of each tuple
+
